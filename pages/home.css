@@ -1,0 +1,405 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+html{
+    scrollbar-color: rgb(90, 89, 89) rgb(19, 19, 19);
+    scrollbar-width: 10px;
+}
+.hero-section{
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    height: 110vh;
+    padding-top: 10vh;
+}
+.hero-movie-card{
+    width: 95%;
+    height: 95%;
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 0px black;
+    position: relative;
+}
+.video-box{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.video-box video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+.poster{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    animation:hide 500ms linear 1s 1 forwards;
+}
+.poster img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes hide {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.hero-details{
+    position: absolute;
+    z-index: 3;
+    left: 2vw;
+    bottom: 7vh;
+    color: white;
+    font-size: 17px;
+}
+.hero-details ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    align-items: center;
+}
+.hero-details ul>li:nth-child(even){
+    width: 5px;
+    height: 5px;
+    background-color: grey;
+    border-radius: 50%;
+}
+.poster-name img{
+    width: 200px;
+    height: 150px;
+}
+.button-box{
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+.button-box a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height:6vh;
+    border-radius: 50px;
+}
+.button-box .play{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.button-box .more-info{
+    background-color: rgb(39, 39, 39);
+    color: white;
+    text-decoration: none;
+}
+/* Movies section */
+.movies-section{
+    width: 100%;
+    height: 230px;
+    color: white;
+    position: relative;
+}
+.head-container{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    margin-top: 4vh;
+}
+.head-container>.heading{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* background-color: red; */
+}
+.head-container>.indicators-box{
+    width: 50%;
+    display: flex;
+    gap: 2px;
+    justify-content: right;
+    align-items: center;
+    /* background-color: green; */
+}
+.head-container>.indicators-box .indicator{
+    width: 10px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.623);
+}
+.movie-container{
+    width: 100%;
+    height: 300px;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    position: absolute;
+    top:-30px;
+}
+.movie-container .left-arrow,
+.movie-container .right-arrow{
+    width: 5vw;
+    height: 50%;
+    background-color: rgba(54, 53, 53, 0.116);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 35px;
+    position: absolute;
+    opacity: 0;
+}
+.movie-container .left-arrow:hover,
+.movie-container .right-arrow:hover{
+    opacity: 1;
+}
+.movie-container .left-arrow{
+    left: 0;
+}
+.movie-container .right-arrow{
+    right: 0;
+}
+.movie-box{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    gap: 10px;
+    padding: 0px 20px;
+    align-items: center;
+    
+}
+.movie-card{
+    width: 230px;
+    flex-shrink: 0;
+    background-color: rgb(29, 28, 28);
+    transition: 300ms;
+    height: 50%;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.movie-card:hover{
+    transform: scaleX(1.4) scaleY(2) translateY(0px);
+    z-index: 5;
+    &.movie-card .card-img{
+        height: 60%;
+        padding-bottom: 5px;
+    }
+    &.movie-card:first-child{
+        transform: scaleX(1.4) scaleY(2) translateX(2vw);
+    }
+}
+.movie-card .card-img{
+    height: 100%;
+    overflow: hidden;
+}
+.movie-card .card-img img{
+    width: 100%;
+    height: 100%;
+}
+.card-body{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.card-body .content{
+    width: 100%;
+    height: 25%;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.card-body .content:first-child>a{
+    width: 20px;
+    display: block;
+    text-decoration: none;
+
+}
+.card-body .content:first-child>a i{
+    color: rgb(192, 191, 191);
+    background-color: transparent;
+    font-size: 13px;
+}
+.card-body .content:first-child>a:last-child {
+    width: 22px;
+    position: absolute;
+    right: 10px;
+    top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: solid 1px rgb(158, 157, 157);
+    font-weight: thin;
+}
+.card-body .content:nth-child(2){
+    font-size: 9px;
+    display: flex;
+    gap: 10px;
+    color: grey;
+}
+.card-body .content:nth-child(2)>span:nth-child(even){
+    border:  solid 0.5px grey;
+    padding: 1px 3px;
+    font-size: 6px;
+}
+.card-body .content:nth-child(3){
+    font-size: 7px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: rgb(238, 237, 237);
+    letter-spacing: 1px;
+}
+.card-body .content:nth-child(3) span:nth-child(even){
+    background-color: rgb(48, 48, 48);
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+}
+
+/* XS(mobile) */
+@media (max-width:575.99px) {
+    .hero-section{
+        height: 60vh;
+        margin-top: 10vh;
+    }
+    .hero-details{
+        bottom: 1vh;
+        font-size: 13px;
+        width: 100%;
+    }
+    .hero-details ul{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .button-box{
+        width: 95%;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .button-box a{
+        height: 80px;
+        width: 100%;
+    }
+    .poster-name img{
+        width: 100px;
+        height: 70px;
+    }
+    .head-container>.heading{
+        width: 100%;
+    }
+    .head-container>.indicators-box{
+        display: none;
+    }
+    .movie-container{
+        height: 200px;
+        top: 3vh;
+    }
+    .movie-card{
+        height: 90%;
+        width: 25vw;
+    }
+    .movie-card:hover{
+        transform: scaleX(1) scaleY(1) translateY(0px);
+        &.movie-card .card-img{
+            height: 103%;
+        }
+        &.movie-card:first-child{
+            transform: scaleX(1) scaleY(1) translateX(0vw);
+        }
+    }
+}
+/* SM (mobile-landscape mode)*/
+@media (min-width:576px) and (max-width:767.99px) {
+    .hero-section{
+        height: 60vh
+    }
+    .hero-details{
+        bottom: 1vh;
+        font-size: 13px;
+        width: 100%;
+    }
+    .hero-details ul{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .button-box{
+        width: 95%;
+        gap: 5px;
+        justify-content: space-between;
+    }
+    .button-box a{
+        height: 5vh;
+        width: 48%;
+    }
+    .poster-name img{
+        width: 100px;
+        height: 70px;
+    }
+    .head-container>.heading{
+        width: 100%;
+    }
+    .head-container>.indicators-box{
+        display: none;
+    }
+    .movie-container{
+        height: 200px;
+        top: 3vh;
+    }
+    .movie-card{
+        height: 90%;
+        width: 25vw;
+    }
+    .movie-card .card-img{
+        height: 100%;
+    }
+    .movie-card:hover{
+        transform: scaleX(1) scaleY(1) translateY(0px);
+        &.movie-card .card-img{
+            height: 103%;
+        }
+        &.movie-card:first-child{
+            transform: scaleX(1) scaleY(1) translateX(0vw);
+        }
+    }
+}
+/* MD(Tablet) */
+@media (min-width:768px) and (max-width:991.99px) {
+
+}
+/* sm (Small laptops -mac) */
+@media (min-width:992px) and (max-width:1199.99px) {
+
+}
+/* large (Laptops, Desktops) */
+@media (min-width:1200px) and (max-width:1399.99px) {
+
+}
+/* extra large (Large desktops, TV)*/
+@media (min-width:1400px) {
+
+}

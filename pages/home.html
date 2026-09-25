@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+        <!-- logo -->
+        <div class="logo-box">
+            <div class="netflix-logo">
+                <img src="../assets/images/Netflix_Logo_PMS.png" alt="logo">
+            </div>
+            <div class="n-logo">
+                <img src="../assets/images/nficon2023.png" alt="logo">
+                <h2>Home</h2>
+            </div>
+        </div>
+        <!-- nav -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My Netflix</a></li>
+                <li><a href="#">Browse by Languages</a></li>
+                <li class="more-label"><label for="more">More<i class="fa-solid fa-angle-down"></i></label></li>
+            </ul>
+        </nav>
+        <!-- More option -->
+        <input type="checkbox" name="more" id="more">
+        <div class="more-options">
+            <!-- Duplicate nav bar -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My Netflix</a></li>
+                <li><a href="#">Browse by Languages</a></li>
+            </ul>
+        </div>
+        <!-- search -->
+        <input type="checkbox" name="search" id="search">
+        <div class="search-bar">
+            <label for="search"><i class="fa-solid fa-arrow-left"></i><i class="fa-brands fa-sistrix"></i></label>
+            <form action="#"><input type="search" name="search" id="search"></form>
+        </div>
+        <div class="search-box">
+            <label for="search">
+                <i class="fa-brands fa-sistrix"></i>
+                <span>Search</span>
+            </label>
+        </div>
+        <!-- download button -->
+        <input type="checkbox" name="downloads" id="downloads">
+        <div class="downloads-card"></div>
+        <div class="downloads-box">
+            <label class="download" for="downloads">
+                <i class="fa-solid fa-arrow-down"></i>
+                <div class="download-bar"></div>
+            </label>
+        </div>
+        <!-- notification -->
+        <input type="checkbox" name="notification" id="notification">
+        <div class="notification-card"></div>
+        <div class="notification-box">
+            <label class="notification" for="notification">
+                <div class="count">14</div>
+                <i class="fa-regular fa-bell"></i>
+            </label>
+        </div>
+        <!-- user -->
+        <input type="checkbox" name="user" id="user">
+        <div class="user-card"></div>
+        <div class="user-box">
+            <div class="kids">
+                <a href="#"><img src="../assets/images/kids.png" alt="kids"><span>Children</span></a>
+            </div>
+            <div class="user">
+                <label for="user">
+                    <a href="#"><img src="../assets/images/user.png" alt="user"></a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <span>My Netflix</span>
+                </label>
+            </div>
+        </div>
+        <!-- bottom menu box -->
+        <div class="bottom-menu"></div>
+        <div class="home">
+            <a href="#">
+                <i class="fa-regular fa-house"></i>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="clips">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M18.5 5c.9.58 1.5 1.6 1.5 2.75v8.5A5.75 5.75 0 0 1 14.25 22h-4.5c-1.15 0-2.17-.6-2.74-1.5h7.24c2.35 0 4.25-1.9 4.25-4.25V5.01m-4.25-3c1.8 0 3.25 1.46 3.25 3.25v11c0 1.8-1.46 3.25-3.25 3.25h-7A3.25 3.25 0 0 1 4 16.25v-11C4 3.45 5.46 2 7.25 2zm-7 1.5c-.97 0-1.75.78-1.75 1.75v11c0 .97.78 1.75 1.75 1.75h7c.97 0 1.75-.78 1.75-1.75v-11c0-.97-.78-1.75-1.75-1.75zM8 8.75c0-.97 1.07-1.57 1.9-1.06l3.26 2c.79.48.79 1.64 0 2.13l-3.26 2c-.83.5-1.9-.1-1.9-1.07z"/></svg>
+                <span>clips</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-movie-card">
+                <div class="video-box"><video src="../assets/videos/if_wishes_could_kill_trailer.mp4" autoplay muted loop></video></div>
+                <div class="poster"><img src="../assets/images/if-wishes-could-kill.jpg" alt="img"></div>
+                <!-- <div class="video-box"></div>
+                <div class="poster"></div> -->
+                <div class="hero-details">
+                    <div class="poster-name">
+                        <img src="../assets/images/if_wishes_could_kill.png" alt="">
+                    </div>
+                    <ul>
+                        <li>TV Drama</li>
+                        <li></li>
+                        <li>Korean</li>
+                        <li></li>
+                        <li>Sci-Fi</li>
+                        <li></li>
+                        <li>16 Episodes</li>
+                        <li></li>
+                        <li>U/A 16+</li>
+                    </ul>
+                    <br>
+                    <p>A group of high schoolers fights a cursed app where <br> every wish brings a deadly trap in this YA horror series  <br> created by Park Youn-seo ("Moving").</p>
+                    <div class="button-box">
+                        <a href="" class="play"><i class="fa-solid fa-play"></i> Play</a>
+                        <a href="" class="more-info">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="movies-section">
+            <div class="head-container">
+                <div class="heading"><h3>Korean TV Dramas</h3></div>
+                <div class="indicators-box">
+                    <div class="indicator" style="background-color: white;"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </div>
+            </div>
+            <div class="movie-container">
+                <div class="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="movie-box">
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_6.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_2.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_3.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_4.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_7.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_6.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_2.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_3.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_4.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_7.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_6.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_2.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_3.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_4.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_7.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_6.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_2.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_3.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_4.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="../assets/movie_posters/card_img_7.png" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                <a href="#"><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="right-arrow"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </section>
+    </main>
+    </div>
+</body>
+</html>
