@@ -5,6 +5,9 @@ html{
     scrollbar-color: rgb(90, 89, 89) rgb(19, 19, 19);
     scrollbar-width: 10px;
 }
+body{
+    background-color: rgb(17, 17, 17);
+}
 .hero-section{
     background-color: rgb(17, 17, 17);
     width: 100%;
@@ -153,11 +156,17 @@ html{
     position: absolute;
     top:-30px;
 }
+.movie-container .left-arrow i,
+.movie-container .right-arrow i{
+    background-color: rgba(51, 51, 51, 0.952);
+    font-size: 22px;
+    padding: 15px 5px;
+    border-radius: 10px;
+}
 .movie-container .left-arrow,
 .movie-container .right-arrow{
     width: 5vw;
     height: 50%;
-    background-color: rgba(54, 53, 53, 0.116);
     color: white;
     display: flex;
     align-items: center;
@@ -186,6 +195,7 @@ html{
     scrollbar-width: none;
     gap: 10px;
     padding: 0px 20px;
+    padding-left: 3vw;
     align-items: center;
     
 }
@@ -199,14 +209,15 @@ html{
     overflow: hidden;
 }
 .movie-card:hover{
-    transform: scaleX(1.4) scaleY(2) translateY(0px);
+    transform: scaleX(1.5) scaleY(2) translateY(0px);
     z-index: 5;
+    border-radius: 3px;
     &.movie-card .card-img{
-        height: 60%;
+        height: 65%;
         padding-bottom: 5px;
     }
     &.movie-card:first-child{
-        transform: scaleX(1.4) scaleY(2) translateX(2vw);
+        transform: scaleX(1.5) scaleY(2) translateX(3vw);
     }
 }
 .movie-card .card-img{
@@ -218,21 +229,25 @@ html{
     height: 100%;
 }
 .card-body{
-    height: 50%;
+    height: 40%;
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 0px;
 }
 .card-body .content{
     width: 100%;
-    height: 25%;
+    height: 23%;
     padding: 0px 10px;
     display: flex;
     align-items: center;
     position: relative;
 }
+.card-body .content:first-child{
+    display: flex;
+    margin-bottom: 5px;
+}
 .card-body .content:first-child>a{
-    width: 20px;
+    width: 23px;
     display: block;
     text-decoration: none;
 
@@ -240,22 +255,21 @@ html{
 .card-body .content:first-child>a i{
     color: rgb(192, 191, 191);
     background-color: transparent;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight:thin;
 }
 .card-body .content:first-child>a:last-child {
-    width: 22px;
-    position: absolute;
-    right: 10px;
-    top: 7%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-self: flex-end;
+    padding-left: 55%;
+}
+.card-body .content:first-child>a:last-child i{
+    border: solid 1px grey;
+    font-size: 8px;
     border-radius: 50%;
-    border: solid 1px rgb(158, 157, 157);
-    font-weight: thin;
+    padding: 2px 4px 0px;
 }
 .card-body .content:nth-child(2){
-    font-size: 9px;
+    font-size: 7px;
     display: flex;
     gap: 10px;
     color: grey;
@@ -263,15 +277,15 @@ html{
 .card-body .content:nth-child(2)>span:nth-child(even){
     border:  solid 0.5px grey;
     padding: 1px 3px;
-    font-size: 6px;
+    font-size: 5px;
 }
 .card-body .content:nth-child(3){
-    font-size: 7px;
+    font-size: 6px;
     display: flex;
     align-items: center;
     gap: 4px;
-    color: rgb(238, 237, 237);
-    letter-spacing: 1px;
+    color: rgb(209, 208, 208);
+    letter-spacing: 0.9px;
 }
 .card-body .content:nth-child(3) span:nth-child(even){
     background-color: rgb(48, 48, 48);
@@ -280,7 +294,51 @@ html{
     height: 3px;
     border-radius: 50%;
 }
-
+/* Movies section-2 */
+.movies-section-2 .movie-box{
+    padding-left: 50px;
+}
+.movies-section-2 .movie-card{
+    height: 50%;
+    position: relative;
+    background-color: transparent;
+    transition: 0ms;
+}
+.movies-section-2 .movie-card .card-img{
+    width: 50%;
+    border-radius: 5px;
+    transform: translateX(100%);
+}
+.movies-section-2 .movie-card>span{
+    position: absolute;
+    font-size: 195px;
+    font-weight: 900;
+    top: -47%;
+    left: 10%;
+    -webkit-text-stroke: 2px rgb(116, 114, 114);
+    color: transparent;
+}
+.movies-section-2 .movie-card:last-child>span{
+    letter-spacing: -60px;
+    left: -4%;
+    color:rgb(17, 17, 17);
+}
+.movies-section-2 .movie-card:hover{
+    transition: 400ms;
+    background-color: rgb(29, 28, 28);
+    &.movie-card .card-img{
+        width: 100%;
+        height: 65%;
+        transform: translateX(0%);
+        padding-bottom: 5px;
+    }
+    &.movie-card>span{
+        display: none;
+    }
+    &.movie-card:first-child{
+        transform: scaleX(1.5) scaleY(2) translateX(3vw);
+    }
+}
 /* XS(mobile) */
 @media (max-width:575.99px) {
     .hero-section{
@@ -289,20 +347,24 @@ html{
     }
     .hero-details{
         bottom: 1vh;
-        font-size: 13px;
+        font-size: 12px;
         width: 100%;
     }
     .hero-details ul{
         gap: 10px;
         flex-wrap: wrap;
     }
+    .hero-details>p{
+        display: none;
+    }
     .button-box{
         width: 95%;
         flex-direction: column;
         gap: 5px;
+        margin-top: 0px;
     }
     .button-box a{
-        height: 80px;
+        height: 100px;
         width: 100%;
     }
     .poster-name img{
@@ -327,10 +389,45 @@ html{
         transform: scaleX(1) scaleY(1) translateY(0px);
         &.movie-card .card-img{
             height: 103%;
+            width: 100%;
         }
         &.movie-card:first-child{
             transform: scaleX(1) scaleY(1) translateX(0vw);
         }
+    }
+    /* Movie section-2 */
+    .movies-section-2 .movie-box{
+        padding-left: 5px;
+    }
+    .movies-section-2 .movie-card{
+        width: 30vw;
+    }
+    .movies-section-2 .movie-card .card-img{
+        width: 70%;
+        transform: translateX(50%);
+    }
+    .movies-section-2 .movie-card>span{
+        font-size: 100px;
+        top: -15%;
+        left: 0%;
+    }
+    .movies-section-2 .movie-card:hover{
+        transform: scaleX(1) scaleY(1) translateY(0px);
+        &.movie-card:first-child{
+            transform: scaleX(1) scaleY(1) translateX(0vw);
+        }
+        background-color:transparent;
+        &.movie-card .card-img{
+            width: 70%;
+            height: 105%;
+            transform: translateX(50%);
+        }
+        &.movie-card>span{
+            display: block;
+        }
+    }
+    .movies-section-2 .movie-card:last-child>span{
+        letter-spacing: -30px;
     }
 }
 /* SM (mobile-landscape mode)*/
