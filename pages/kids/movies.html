@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./movies.css">
 </head>
 <body>
     <div class="wrapper">
@@ -19,15 +20,15 @@
             </div>
             <div class="n-logo">
                 <img src="../assets/images/nficon2023.png" alt="logo">
-                <h2>Home</h2>
+                <h2>Movies</h2>
             </div>
         </div>
         <!-- nav -->
         <nav>
             <ul>
-                <li style="background-color: rgba(48, 47, 47, 0.486);"><a href="./home.html">Home</a></li>
+                <li><a href="./home.html">Home</a></li>
                 <li><a href="./shows.html">Shows</a></li>
-                <li><a href="./movies.html">Movies</a></li>
+                <li style="background-color: rgba(48, 47, 47, 0.486);"><a href="./movies.html">Movies</a></li>
                 <li><a href="./games.html">Games</a></li>
                 <li><a href="./new_popular.html">New & Popular</a></li>
                 <li><a href="./my_netflix.html">My Netflix</a></li>
@@ -184,29 +185,46 @@
         </div>
     </header>
     <main>
+        <input type="checkbox" name="category" id="category">
+        <div class="category-card">
+            <ul>
+                <li>Halloween</li>
+                <li>Hindi</li>
+                <li>Tamil</li>
+                <li>Telugu</li>
+                <li>Malayalam</li>
+                <li>English</li>
+                <li>International</li>
+                <li>Action</li>
+                <li>Dramas</li>
+                <li>Comedy</li>
+                <li>Sci-Fi & Fantasy</li>
+                <li>Crime</li>
+                <li>Sports</li>
+                <li>Family</li>
+                <li>Romance</li>
+            </ul>
+        </div>
+        <div><h1>Movies</h1> <label for="category">Genres<i class="fa-solid fa-caret-down"></i></label></div>
         <section class="hero-section">
             <div class="hero-movie-card">
-                <div class="video-box"><video src="https://r2---sn-i5uif5t-h55d.googlevideo.com/videoplayback?expire=1790433006&ei=jYK3aqikPMCti9oPvvKV8Q4&ip=2a02%3A3035%3Ab15%3Ad989%3Aff32%3Ac09f%3A9ee%3Aa00a&id=o-AEE6A9nRsF_bKtaHh80FB8cBbsfT2H4Yv0HQ71IgPB37&itag=136&aitags=133%2C134%2C135%2C136%2C160%2C242%2C243%2C244%2C247%2C278%2C394%2C395%2C396%2C397%2C398&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&rms=au%2Cau&bui=AWzQHwoCrz4iMxe_2d54UHkkN4RytLmxArZmaHaKDW1gyxWbTue3rlWp2PzG0kqAs2TG8EBJIxU-408f&spc=I-rgIaMYA_CSNJL_HQ2tlRFm0R_MTy20iZf2Jg7_KdY7noBf5HsLoQ&vprv=1&svpuc=1&mime=video%2Fmp4&ns=PdAwbxaWPUExxuJaUm9YJr4Y&rqh=1&gir=yes&clen=9020618&dur=79.871&lmt=1777037343946234&keepalive=yes&fexp=51565115%2C52112904%2C52178456%2C52184226%2C52227521&c=TVHTML5_SIMPLY&sefc=1&txp=5309224&n=1Cj9q-HSXzChqw&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AE0s2JYwRAIgChMc-OsVQckEM8__4CzupX4rmHtQTA53s03pRGEm8kwCIEtyp3NWXZmsv6nP96fKZuIK4i6xGSrjZXZy52wVbrYs&pot=MtIEACG9iK1N7T0AYX1G--T-KkBdq6BWhyxzsB_RDTFBbR6h-EffD6wWbEl0Bzsm8ZiQaPDxGVewg-UHxOngOXwXCfN7UF0h7I2QizUx9mURyIu9V-doXPFabJZZbCxogfCZ37Nj12YRFU-RSaJiHG_hmon-6kp9szpIrT9Sk3hVGKXYgPueu2CaxBr0JgIb6_ZKPvU8KBomy6v-vS2dnoFz96gOslyKsPTXXGW_8JXXQ3uApcsQj1khXGKjDTwY573BUpyfxYdTeTt8muvOjh-G7RlrEmY5ndhdjuVjSoY6kyPDVfJr8gwd8v8SBx2kvwnufLumND7R3bF9yetpefC3RemR0fgP8z2Z2vFQNBT_bUla1o4jCPxKHUS99n0X4o5o9qOAu5dCtm238wFfWcl3k6J_8BRcRvQgU3G6LrtU5yszBu69EyNeykazOfNwmaWZOCVzPnNpb1zBEZBHIHBWoduGanetkAgjQVKKsmTvc5cJhypAI4t8wRyJPjoXEQ6pQ2XRRW8L6KgL33QwHIiIHOihUrYB-V31q5zVp4Oeuo9Rd9fuKRBGljSkrlsdspDfdxHRhr8-UG36ErkwkxKqvO3m37GwD0qBxv4urg5CQucFzEQRdo2KLVaX4mGvStQj10wXFxZ8bwTZnyZX5u7ayroox8lWhULOYTxmTVMDOrwZUpnJO8_O1vzH8Au5WKwqKvv8UuITqIIjklqMAJMOVkdlzNK6NJe6t387qWbL1nzsLJLn3DyfyEQ_IU0emMTebCe4qiITWwdjFcKJ51URdwlM&cms_redirect=yes&cps=233&met=1790411416,&mh=Vs&mip=27.5.183.95&mm=31&mn=sn-i5uif5t-h55d&ms=au&mt=1790410865&mv=m&mvi=2&pl=19&lsparams=cps,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRAIgLMToUQuMqPLUKSrJbzGQe835WAsb63_IXkoOkoZPfosCIGOYlm21mQ0z0xlyZqDEmHX-8tzW2kVvvijz4MW_N1OK" autoplay muted loop></video></div>
-                <div class="poster"><img src="https://occ-0-2218-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABdv7GEM87AldPwxuXDxcGMFo66eZZjjXWtPp4xzLy9zJ_HNS7wQ_TYm28Glo70G6dpyCrEGbX6PcGYIxoW8jnWAWTEbN71SZjj-W.jpg?r=a63" alt="img"></div>
+                <div class="video-box"><video src="https://r3---sn-i5uif5t-h55k.googlevideo.com/videoplayback?expire=1790440291&ei=A5-3aoL_Cp2I_NUPjqaB2QE&ip=2a00%3A20%3A641e%3A62b6%3Ae4a0%3A41ff%3Afe38%3Ad3df&id=o-ADule3aur-W0taHkzAX3eWdLnTc2we3QLLxI0sKQD4ZW&itag=137&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C278%2C394%2C395%2C396%2C397%2C398%2C399&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&rms=au%2Cau&bui=AWzQHwp9YRxue5TBqQlTwk48fD5i36g7n8r8QMgt2rQh_mNc8WNQacOJbWMTxwrOKzl3hFRQwcKY47zj&spc=I-rgIfzhm2PuNwJAHDTxKcR8HODtBnbIoEM7cLpvJeBcxz3qDz6Nnw&vprv=1&svpuc=1&mime=video%2Fmp4&ns=-AEm3rtyZdjhPowlOcs6ySMY&rqh=1&gir=yes&clen=30280646&dur=123.414&lmt=1765814889542028&keepalive=yes&fexp=51565115%2C52112904%2C52178456&c=TVHTML5_SIMPLY&sefc=1&txp=4535534&n=yTvYosbj5E5uDw&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AE0s2JYwRAIgdGXEb9ZVUGmVbIoUXunU14eh_7xj6ntGhdvJue7cLzMCIEY-F6XxiSm2zG1lY3ynfvUcn_4r9S9GhI063VJ6WIiJ&pot=MtIEAKDtae1Htr4A4OHYvEKUNuN1Mqe4Uvrz8EkikJHBWI9N9xru9MZpckQ4Krgd6YEsVownuIEpZWBjJzUhzG9g1tlDfXC3vV3hogl3mKTDSPHpDB-ljxyallFzOFfetpxek6i4i9JCNs74mUGuCSeAL3DTX7jie8Fu3R2w61HBsDJwZb5dh_WYEXv5yZ8Cpp0eT7Yfl44QcQ1H4Wsj9AX6InlMzDLYlUODNutwLSR3QbPHtAmn2Zizd5Z5uqsF6Ehn4jvQ3sQkgNrXwi4EAtjxBbb2h9wsvMq_Cv_5LVlDwCwmodpIz4VxCA3WfSEW0BI742HmWzasYV4ADn95P8mZvzfAzeAxOrWcchOWn-0gTraq_0PoQTBzr10uCb7bXSVvhZLjZ5FNPoBjXQUnky44-G7VJjrinizHsYN2xrGbkBGW2LO4viSpTLjk2hq2LkO3mWOhzCsQ1Nko61t2LGDPS8NlNbU7OyWxQ_seCP0w2eFWowUl7QbG_9OpX55oHFQISN2pOD8dGEJVQ6Z4fDUGfv_Xq1NksJzeaJZqyr80vqFRa4lHlJnQx13DjGmainOLQoJQcgD7_F5mC3b_57EIoaqUwThvMa0nhOy_mecAxHJQTdi-Q7djDlCJHm4B-qNh-inUH53leB4Jo8GvbsI3y-kQmG4_PSeknVwKQ9f-NKMFjA44j-qYjx5bNNLNzbV3i4X_JC7DxmpjrtGh7-i0HqK05lnKvyvjrP-ozMPgZZX7l4RrS4Wy2W3EQrogCxTnluGy7-jowpWH1f9U80VOiudp&cms_redirect=yes&cps=288&met=1790418696,&mh=Yq&mip=27.5.183.95&mm=31&mn=sn-i5uif5t-h55k&ms=au&mt=1790418307&mv=m&mvi=3&pl=19&lsparams=cps,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIgFnPqiQsvPYSX56ifrgVAldUXXybOlnAe7hJr-H4TMIcCIQCFXLswvKtJ9wtYKW4lrprmq3VBKPWUawG8AXZFUZTLTA%3D%3D" autoplay muted loop></video></div>
+                <div class="poster"><img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQfg-YrauyLlcptwSIiS7J_eviOhTWHvM35b_QgfzDMAp0b6vKT-Bujih3HyB1qMkuKRHr-kMSyLMf6G3UkAz-W40FXVQQS8LN_2oh2hA5bFtFqIyjaiDE1ICo8m3nfPb1NOGrSzsi5IVFp42EBPEckfJxVE.jpg?r=5ed" alt="img"></div>
                 <!-- <div class="video-box"></div>
                 <div class="poster"></div> -->
                 <div class="hero-details">
                     <div class="poster-name">
-                        <img src="../assets/images/if_wishes_could_kill.png" alt="">
+                        <img src="../assets/images/the_great_flood_transparent.png" alt="">
                     </div>
                     <ul>
-                        <li>TV Drama</li>
-                        <li></li>
                         <li>Korean</li>
                         <li></li>
                         <li>Sci-Fi</li>
                         <li></li>
-                        <li>16 Episodes</li>
-                        <li></li>
                         <li>U/A 16+</li>
                     </ul>
                     <br>
-                    <p>A group of high schoolers fights a cursed app where <br> every wish brings a deadly trap in this YA horror series  <br> created by Park Youn-seo ("Moving").</p>
+                    <p>A catastrophic flood engulfs the world, forcing survivors to <br> fight against rising waters, chaos, and time. </p>
                     <div class="button-box">
                         <a href="" class="play"><i class="fa-solid fa-play"></i> Play</a>
                         <a href="" class="more-info">More Info</a>
@@ -216,14 +234,14 @@
         </section>
         <section class="movies-section">
             <div class="head-container">
-                <div class="heading"><h3>Your Next Watch</h3></div>
+                <div class="heading"><h3>Tamil & Telugu hits</h3></div>
             </div>
             <div class="movie-container">
                 <div class="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
                 <div class="movie-box">
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABd7nUd6X1WAguWpef6SwCOn7Bw2zOErLj1Jv7VRiYhIyc6J1YeQHsKfh1n9-70KfEJO9QlKQMlmYv2HvGZS4JAoTXRUCDLv7d1MloileHSg7pXNesxBGE8APkBJ8bw6WI8KShs32gYFoER7rctRj0EErPCPmmSzGcVtVKkHlBr5kBXVdBOur6WYyE7MPxAw_BDRAKMckzMJD836VC3Ub9A.webp?r=b3f" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQgS-HkyW1URxabVC908safoNJm9SAGrpQacHx0KNoayACGy1nsZGbHTxCBGaYPwNr3yPtq5Sy-pJSMrplmEw-bXkt1QVl4WXK21ciBCVjgNSCfuVeR0fXayN3zdV1-_MLm8ZS6A84TfPAjE3_UIFnCEm6b90QNpuR1_9LKh-fTuXiZCoTJeegocJCnVV4uwZAF-ZBjRkjRb2LqW67YZ.webp?r=b3f" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -250,34 +268,6 @@
                         </div>
                     </div>
                     <div class="movie-card">
-                        <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABb7c6yX2yKl6QEpkvPiIaAx2igVKi185U59FAbKLQHRgh8UsCeiNriR4OCuLlEIVYYFwCp9Ju_6MOdo5TmubTUn7WxD-ZuAgtK5U.jpg?r=da0" alt="" width="100%" height="100%">
-                        </div>
-                        <div class="card-body">
-                            <div class="content">
-                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
-                                <a href="#"><i class="bi bi-plus-circle"></i></a>
-                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
-                                <a href="#"><i class="bi bi-chevron-down"></i></a>
-                            </div>
-                            <div class="content">
-                                <span>Series</span>
-                                <span>U/A 16+</span>
-                                <span>16 parts</span>
-                                <span>HD</span>
-                            </div>
-                            <div class="content">
-                                <span>Sci-Fi</span>
-                                <span></span>
-                                <span>Drama</span>
-                                <span></span>
-                                <span>Thriller</span>
-                                <span></span>
-                                <span>Fantasy</span>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="movie-card">
                         <div class="card-img">
                             <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABR6SUACJXfa8z-g1AIcBvXjnzLUvclc56WTeBYvLCoH6bVDsWpP9mkJfFCaI0ZLqzIA2udvM3VDulRk6wAJupEi7yaJJ8QtWv5S6qjS_5DoQqVfqGhLDhUjDVe6gU0ZPW-LAJkuFo6hmoc-LjeK2SKcKOmsr7Fj8GAllXSKZ6ZR7uPE788lHdREE9rspaUVTnlloqt53OE8N_X4YJe4d.webp?r=fb0" alt="" width="100%" height="100%">
                         </div>
@@ -305,9 +295,37 @@
                             </div>
                         </div>
                     </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABUgURzLeN18NF3cyJP2TxdlAqY-8BKecMotK1s-TIxLDw7s9UHiXX18MeMFmKQzIstKtXxrFv_Ih7o1E01xWzok5m5RsADJt0DvtN9AcozDkLVz6d3FuhE6d6p-pEXsXqu_rjkTIp9AOjgEl9pPNlBwgijpkoHQMrFE-EEzoXTR5zvR-m3-OLJFCTEwvkxRd1ElLkFIK6ur6UhZ0tNpW.webp?r=79b" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABVmOLu0DyLUsK4b7NDgk3etsnuhkgAoAB0A63HBq08SmiFJ5AZbrbStvEbfV4QI1xUDMFubEfgoP3Cd7Dk7gdcW2Nd3zpQ1tGfdD6hMb0G3NnahF5GLjjHKf1xUtUqKRzgDLslaZf9qHfh9e3we43NekHjYn8W9NNG65zlkukgqW5KxfLDD7Vx3W5RBZ-KQL_NGxxrr_EEZIi0EgJ9FbMg.webp?r=79b" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABf6FtZqb7rWsTZ1hMBUEKHfHteVk3uU8r4vh_NbvYDHIoQv0iv6jlxV3n_PP0Kd4_poDcUoHEj-_E2K4WautdLD_gqnwRFLeCE0.webp?r=56c" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -335,7 +353,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_7.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABRviDlE4q8Iyd0QpmTi914MyZtqv8nTPdqVB9863suEVp4No2TTQQMiuuPp4RAstbWjkTvv8yTYVC8ymc1OGUarR4bNgEvNx8rk.webp?r=f5c" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -363,7 +381,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABXL8FKrABlFVyClGUj_0-bErb004DtOyq3lbwadF1M3nKj_KtdtC6j6SqFequZJMHzLoebOSXSqTaXa-wK5e3rbqAZdxjn2_5bNe.jpg?r=b45" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABb29jCmFJ58X1_r4LB1ABCyVFD66xB5vUi3mA_pXOfFWeg2G0UKv6wAxK5dVUVz2lxblXXUwBSeksXF5rbhKYNpeOZuITk4D2qSlJBuxBQLRV4boMdlNatMHfnpDZlS0XrXJ_pBbyrT9erjfbHq3kpz6_RjcCyO0Y1LN1QczG8fVz8oivYKcGapP90WtzSL9_jw72N1J0Be1lmeP6CS-.webp?r=18d" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -391,7 +409,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABWYYK_htkQgdFPcvkxo95k42isuWRE9SvTS_zu-PGJN5hOWkUhYu9aWtPp3lSn_4kNE5XeOwD6ofiWAdPkpCyCqzF55eaItYawzF.jpg?r=086" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABW04-ctFhZzg-9mJ9do1TSXeZ5zt-FGPbNPF3kxJTRXKYPj8YOlwYdr_bfkQ2v9JwIN2MQXt_gERjO-McNME66-svTVJJrje8wM.webp?r=087" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -419,7 +437,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_3.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABd9M9jeGMaD-ocAlIl50XDoDrw2oP93Q7xDMEyrGQ8iC8uYDaiy1lAYuVhXO6XxmPqLtFJ7hJuYoGUKEKjlARrsF6PW0o1xfRlw.webp?r=734" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -447,7 +465,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABTdk9XG2jeVBbnyYOveJwt2pa9t-fPFQbe22DlBseLfXA49q7avK2ftf6JlEKm1znS9Z5rPCxipjhRS54QtVvMcXI-9wnVyG0k-d.jpg?r=118" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABWqfD-CetIcKDrnw-DZPl6mRLWh7xdl-wob4hVnlXS1HdDSbdT0ViIbjzFXm7QCFqOMRxME8Jqh4MArSAZWLcItKGmS6udGeF0Q.webp?r=f20" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -475,7 +493,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_7.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQfeLSlHbmmOGXEz6IG2igzk7NcponwMPaDNrDnPsgWKFiE8U0Paz6i1kzGzu3fAw5ZNOtxeRSfdVbM0oCfmk0UuALxUR9nL5C8.webp?r=a16" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -503,7 +521,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_6.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABcAlVFeVm4aLB6gIOfeNGrGYAXmHg4jWqaiAx03qZRHCy-nl-bt2l3W0vmjYutsyjlzKj2HEVsrDXqaWiT1AVbG5SAr2db4Ou9w.webp?r=323" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -531,7 +549,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_2.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABTyza7amm31ToL7gYu_TZ7kS8d_PHuqr5tn-IODOH4Rh6tyUNYh7pNSCjvXD-kHncwap_8XAA4Gp8J240viWqMGK_Z9fahTFiqg.webp?r=c90" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -559,7 +577,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_3.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABXtTmyhsp2STXolyJJ8N3LHuyiRnOOqSfLkCWXcfjlIYICRVWSiHzLV219G0WU5vEMGUpvWCmbHsjqMlyFp8nuXECscHFu6lmB4.webp?r=c7c" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -587,7 +605,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_4.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABeEWxtoOA89Lgta93YVbuNsJgcVwuqvzp4GewNw9LeZ-1MeP-X4kfENSk_X96p3gFRNXLCQwym88ldQzgNlUzaLrSQQUwfxMz7U.webp?r=528" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -615,7 +633,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_7.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQ0jChWpzuF12lH4rmmIwm0hVrmCuPLargLude47GIHliqkZ4w8BMvgLdjATGnCjfglOW66KVHdB3_MpBAHgAQVz4C9NydMbHmQ.webp?r=058" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -643,7 +661,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_6.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABWNshfM2PQMFyt8WUVWY3I7QEZdHIO-CTGvWmRMr5EDmaOUtf6zBiJbnofUxtaKJp1C_6uNPFS3sLwSa3mHTgB_SYkeis29enJQ.webp?r=a4e" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -671,7 +689,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_2.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABWluTDWZh14OSzl_NLhb1vKJi9hpAO0zxehxKmGI7jZaKsRnzwKj3mtChiWhaVnAFW0jtRQy_MC-Ri5cR4yTrvSO5--5YfIys6A.webp?r=a43" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -699,7 +717,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_3.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABR6rYuyACAoHKRN_1_UtAQ4wIGDH37BAzrJ_zKJV81ct34PNWrbQG_oHjWBIZJnVw03uP481aGeXf5X6Z1XaT2ZMNrpEx7qlA5k.webp?r=29e" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -727,7 +745,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_4.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABU96i_uRO248W9LFGEGRkmxTCEcIYooDN7fB20Etrt5fQiqKenNFgZwafSKEmxlKYSiXvSiSAFYZo2CgJveCJHdjH_KVP5zZVR0.webp?r=c23" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -755,7 +773,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_7.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABdKHSs_hw_py1T87jbcoS3kGVyFri9c09tF-Ic2RoExZYBaYLpt0JSeyqps44B3TtjEQUKGiriaZYdq4Hn4xhpv9JLA5GaUb5pU.webp?r=616" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1088,14 +1106,14 @@
         </section>
         <section class="movies-section movie-section-3">
             <div class="head-container">
-                <div class="heading"><h3>K-drama strikes back</h3></div>
+                <div class="heading"><h3>Asian Movies</h3></div>
             </div>
             <div class="movie-container">
                 <div class="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
                 <div class="movie-box">
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABVIjQdvB-ZY3H2SLAgbD94IxLGRapRm_5ujtLfmyeEEPWvGHcfHADAahQoR_O2vkmyGoy8e8o44zQxcPv4M8ExN2jG9nr72pUag.webp?r=e21" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABYuVMeqYzxBSPCCBzCqKSj334wi5YE8xsBvnXvVKSFWeNb5rVeXcyv092Exq-VFNIMYzeVBAVWvGAio8Et0jMICS9-EUgH5I7k0.webp?r=f56" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1123,7 +1141,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABer5rfVuIdOFo9ZJuv2_jPSbKZuN3FqlJI4yWLqg814g4ov6Y7bUrCno0bp_xQXluhQInlhkIWc-eTZKJq-PbfJ9jBvQcz_Wgw8.webp?r=b57" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABWJSx9lwI_nuDvab7tRKQmboCwACtxr6zUIiWIhuV3tKTYr-Jso5GUgQ4qIdc-hjp1AzbIWOzZp616UhicXL5DbCrCwuD6veqJw.webp?r=32c" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1151,7 +1169,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABVq8GRexHuoj07yqomoJlmDsA996eZVx2uB2FMwBj5fpth4b2pUodrQxIQI8p6hF3FOPouEFSika5Bpvvx4sRcJ8bLcDLqd7kxc.webp?r=e57" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABVoNd3TbPualNwrItr49deqGOuVy680tluaNgGlwj5TNiu3X6uNKrwbFzIqKC00wa5l9RgmD4hYQ7la4lZXdYoaGPT21iFwOXLI.webp?r=d0d" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1179,7 +1197,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABZaxBaNOuQEwtU7rgRUOTYeEinHczLx_JsFd2nZTQaTpkqjTUp-gQI4Hk1sVg2lNKBnny6yiMs_MVAhTsG2sB6mGetvgx_5eaRw.webp?r=b3b" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABbIamg0HEmmAVbc3SbTX6rSW208P5zofzGwYqrQcipeDLJDGI7XLi76P5fncxv8QN9JuOBZyl7pKW0rCxQB4IM1Ykv9AiUCcQkU.webp?r=ed6" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1207,7 +1225,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABZoLRu6raCdnKnhm1SJPKaA4vJ-soltDhcAkw8q53bNETG2VpWYewVoSdEoMPwAPoZqboy7bgodggOrEkLozvCHmSVPGGs27dB8.webp?r=811" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABflBQuoEY8WCRoartKwbVzVZCcXMbmGKUD1JJjXFUkEaXO2V9L5W7uUw_ruGIIwZdTtmc4LhFBafKArzd1Ndu7chQtp27dwCf40.webp?r=c68" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1235,7 +1253,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABXsNfgrIhOwG97lQqUs8mYX8KexxH8jAGBvlbZUAd3blJdc_D0NwVMO7ZkzIm01iM9oKHuNBB1mFgh3biD0sVruD9WiHpF9pLD0.webp?r=eac" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABaNY5ADonIXkyBe--Nv2WJON5N1Ofu8fM6JQUsGKY5Ox7b4Om9m_7ZsxdneuuC8DspJq92cxQgx7toK8KHzimxysfW7JV53jHvM.webp?r=930" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1263,7 +1281,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABXZaFwL0FOdb9HsnSs4NdKLA0RGT_lDneGrGgYtZhOFRgnT2bH9ZPuzZgXN0kn1dHlvWLLkglrAklwvTMf2WxvQen8QXInfM4ic.webp?r=428" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABUhJjBWRufRSG_V3lasrijSpwpmg4wxXu0TKoa3_mBeHy8hfYkLRh2JPvZz-6MUrw8-RI6GX_2Uf3ebxXW_Ji3l01b0KXzMIT7c.webp?r=7ffhttps://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABXZaFwL0FOdb9HsnSs4NdKLA0RGT_lDneGrGgYtZhOFRgnT2bH9ZPuzZgXN0kn1dHlvWLLkglrAklwvTMf2WxvQen8QXInfM4ic.webp?r=428" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1291,7 +1309,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABW2IkEfQi3PwLseVxHPjnAgmAOldHrF2EIXjOX1fVk1n1I0J-FDIf6tWYM3uFEba6WQxyjxVngR-qcbP-wQBjtR2FtgthU3GF2Qf0b_VUlbaHzb78Bi3oJYutHKDI2ph7haeVGvLaFFn9moNVssZRP189PupL93Z8NJCdJ6XwsXfDQ.jpg?r=3db" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABZnBqXANwTfdMH4iY5pvxF-e7y0imnv84HhlWG_23v7Hn_PowuA3TMmVaaNI2UJvCmg85CfADgBILD9HZQ8-KYZN5DQKKV55ZZw.webp?r=8da" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1463,14 +1481,14 @@
         </section>
          <section class="movies-section movie-section-2">
             <div class="head-container">
-                <div class="heading"><h3>Imaginative TV Shows</h3></div>
+                <div class="heading"><h3>Comedies</h3></div>
             </div>
             <div class="movie-container">
                 <div class="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
                 <div class="movie-box">
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABeFw2BNd4K6Gyz6QjFsrlVm25TyZeojYZaOQRnPuF3XR6UstLRmgo9sfpaCosqsBdaXacAI_7Wno5-w-JK5XwfPyqeLEZrHlu-Y.webp?r=2da" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABaep3-aNyCDZrlgApV6vut9Ah73TPKJTmConoB-wOAHrhMgWUTQYbqRjJK9_Zf6Nqc0R9QrXxzLN7V0RqjsJf_52zTP5o7Zv0kMU2FLIfHSdtwKpQgE1Z7JWNHQG0W5QZe0GE3P6rogfrUiSgt1M966707GmEnmBy6JYuC6Q2Bv4.webp?r=7fb" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1498,7 +1516,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABV8cnkCDtrGJlfN09vDZdea6qPUv0HYIEgJdX11vqm8W9-lwhFACWUiFgRlmDg7jpuzpT7ZMt8zrJakytWK1qSD5j1LAJtqFX_A.webp?r=590" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABbiJhjrZf1HlckwVsaUIYpGRgsfHhPkrEtgabiCnLo2tACSR1cJ5j3GVWJ8tmaGLdBBts02_UavrMo2GZBb-AdPJriGtGBNzBtA.webp?r=59e" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1526,7 +1544,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABceTlWXrsQZe-QLC5ZrV4ToyP5dSc_5s9W4kaD1YcCHIG4OafOfGnw8HBARozH3v7UUiT0tLGeVjAsNZERpxJw4KwZPk5Ivqp7A.webp?r=849" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQEd-BXiUbHfIdxK-dDBFa4PqvaKGnucq4ldt7YyELR6pi82R-uoeRVJ6AHAG1sIu_uip3UlSdnuy6V_UjrDOFBDJDRyXH-ih9w.webp?r=f58" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1554,7 +1572,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABcIPwUhx8vUDpFFwX3Ltzu4agWspV2vB0y2y_wSpVscOfPefU3XSD01IrsdHx6guVys-iR7mdfvvs7utd-wm7NW-angvV8Lrnns.webp?r=1a1" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABdbYfrjGfhINkDqCbjuaGwwj9fAni4VcLErV-pHFNM1VJkPH9FLGaQYExWg47XNqXUR-UoStVn_3bCFMAVFH5HhgaWf-ofS1mnCVQH_ibEXrOT2jsFeHJsF3SPmPtlcIOpYdA5eC8hau3si17QwwET01vi98IZOpPDg8vjIbWA.webp?r=72a" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1582,7 +1600,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABexCZbF724DabZKXOWInVa3mmQJ-7QJpO3lCyCuyGEhhJaQxzxJQFANp6U84BGMHsSDIddBV8SeRbtMS4k1ukdJroKXpL-0HiTc.webp?r=0e7" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABeEWxtoOA89Lgta93YVbuNsJgcVwuqvzp4GewNw9LeZ-1MeP-X4kfENSk_X96p3gFRNXLCQwym88ldQzgNlUzaLrSQQUwfxMz7U.webp?r=528" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1610,7 +1628,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQH9qVf0d3hUdfPbxYnIM0hXOh-zbPD8hSAKkeJBGXy4BmrLFuYYRJmcPJH5d3xwzf0cl2mAmY7keSkxtD583XghL0IjQI94GGk.webp?r=f9d" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABROlbvTdzaebLxuLZqkALQIwvp822TpScRsni2Ni4wK2g77y--m9j_A_Gvk7KTTJ6diDqWYlGbWYYoTpktxlSshDHNA9Lnjjw7E.webp?r=339" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1638,7 +1656,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQ0_FsIs0gm5AyC4m3bpYu_1wQGX-ad4dVZlGcYeZJm0h_t6uRr2C-fsL9vhvoa9BOz09UJp8Vjt9IG8K5q2H4aGxMnCye00u14.webp?r=386" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABfKMY_9BJh3y9K29OvGr6YD4Eo65cPKEbGyfRvegYYkqWkD6SMyFNclkKXtPKXLmCvQ0ItoeNdaVDqkDKJTutBqrQ_SFQuh0wMI.webp?r=4eb" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1666,7 +1684,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABXhDmWVuxGS5xGYzqrjdSvGPvdoxMloydz0hOMCEvBzSMw5cqXcsE_m-W23rkL3pVjPF9K5lS3r7SIXgHoyl4PWNIwDtcyp9ZlY.webp?r=64a" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABSOtWF11VayepahasDU_6gpJWROIDm4QcwsIJZuKOckUyuTAWdwWQmDqSWgoNTDpTZkD58XBJP_UvdqRgaQgj75pNikaQlFtLR4.webp?r=eda" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1694,7 +1712,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABTdk9XG2jeVBbnyYOveJwt2pa9t-fPFQbe22DlBseLfXA49q7avK2ftf6JlEKm1znS9Z5rPCxipjhRS54QtVvMcXI-9wnVyG0k-d.jpg?r=118" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQ0jChWpzuF12lH4rmmIwm0hVrmCuPLargLude47GIHliqkZ4w8BMvgLdjATGnCjfglOW66KVHdB3_MpBAHgAQVz4C9NydMbHmQ.webp?r=058" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1722,7 +1740,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_7.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABR6rYuyACAoHKRN_1_UtAQ4wIGDH37BAzrJ_zKJV81ct34PNWrbQG_oHjWBIZJnVw03uP481aGeXf5X6Z1XaT2ZMNrpEx7qlA5k.webp?r=29e" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1750,7 +1768,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_6.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABVh3en7csk9tfYe7RFkwzxikIRLgE1kmoWJESZZgCTudCsQ6Vw_sl86PqNvO2q0OUePv5r-XNk3DQqt65WL2drDPNG6iZnwd-uQ.webp?r=e3e" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1778,7 +1796,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_2.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABR1wVY8t1OzTQ_t-lvwbBjmaPJtGQHcC7Uv23CXfEWAS86Xw7-BtDV2C-MTUhA-sCeold33PyuEG3hLuriPQG13NeH79BaLq_cY.webp?r=44f" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1806,7 +1824,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="../assets/movie_posters/card_img_3.png" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABT5WkPsuLsiXbR2MJq1YcAKMhCsQNNU4tiJLXglOTmHwgFUvNn_qkSItWryeMCoBexgIKDO5eexF40qKiDdSNIbZK7dmSVvDg00.webp?r=d8f" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1838,14 +1856,14 @@
         </section>
          <section class="movies-section movie-section-2">
             <div class="head-container">
-                <div class="heading"><h3>Only on Netflix</h3></div>
+                <div class="heading"><h3>Biographical Drama Movies</h3></div>
             </div>
             <div class="movie-container">
                 <div class="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
                 <div class="movie-box">
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABfsK3gVwjvI6vf4_FJS6QFKw9B__Ma0kSx7UpCCC91-3yNz5TrhPath_Pjuf4x0qQAcL4NRsaSQo--PKHk-nr7fx8ncX3OYU64g.webp?r=473" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABXZdVXtrGu0YoBbcTykzpPuGVfiVxJ3XDVbWXQD_GG2M7-qZSTn8KhfbuhRUmdmN_xbPwJogoA_8sGBSBRq52MxkFZuuTR6hYkE.webp?r=787" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1901,7 +1919,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABe6D6cimm631mYojn2XP8_2qf49OQ0W3pzhsb7vbGn3yyMs_vEsMS5ti3rh3cCzdNYTJMNqTDwploNNmJh0gFeH3ODUYZOHzNq4.webp?r=7c6" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABXG4vAEid32KYQPcFX4omsK_n-cl3E0cGSZaDejKLd_2rWxMCzl6VUo3kyd89sgTnFgddlE_CHJXY3x9iVfGbwGEHj6oaM6iCL0.webp?r=786" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1929,7 +1947,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABYuVMeqYzxBSPCCBzCqKSj334wi5YE8xsBvnXvVKSFWeNb5rVeXcyv092Exq-VFNIMYzeVBAVWvGAio8Et0jMICS9-EUgH5I7k0.webp?r=f56" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABRFZ5Ho52MS4Ff1SwvJAICL9osG2cCqzYpZ1bdAjmnzc0L9k023I53ukXEBkR6ubPJiYJCUe8PsdfnV3GJrzbb-E66QfiCzpXXY.webp?r=4ae" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1957,7 +1975,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABR6unJao4CDJjZHRt8OjZrn_-X4E8G6Gd0C3ekZ9DpEZ95fou18fXiPEGkkinGb0z5drhZdGZP2P3Z-wRMCOnfXdU1H_jmjDVRW6_ojFZyDsHhhciPcbkpiSeZQC12ylUmbIzAvlXZSwqp1AWl3uDxv2i3rFhbC5mtNycmc.webp?r=7e8" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABf396ZFK646F_k36yG79SMVH96UWdWCqaM1zgQ2VkZD11p-JBeD4aSMX4hkgU6DJ7aCRMK6fF__ruwAeTKl4qKIMxlzYWrNxTxc.webp?r=152" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -1985,7 +2003,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABTfUh6NfEwh4BxTYE72-6jPJ6Q3cAIuAcs3RQQVP5O_itUEIeDWdlIcHTCEr5jkzA_4foqcdz1-UqmrDyHY5ViLCFztQV2gqArO0Dk-yh7ij8g-B9AY77StmxzoQmiQP5_TVtuUIsoe670ckXe_mZaK44rFow_fyrB_7W4VK6cu1IcjOvRPQ4euyhO3gzWQZdhqq-8wxMHzRWY1rS9OeTvLiKqYJjc0S22JHCIx1He0ip_NutwsZWPAJP4qbyTK16AwxXiUgUmLBPokUVxbt_6Okwvl1grpJsw3QXu0moPOlaFKkxtF_E11HfZ7cnalyJHZqfha6CGYVGCzimBsQDrMonltrI_nEKXKs.webp?r=93f" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABb6G1UkB9hW_tq7m6Fs5iY-gW9kAGENQvjT3RNvQTiwcUuToduYssNng2_c5Ah0N0-IsVcKnKb_1bHOkn2YkTyiSdxl4UJ9iLmQ.webp?r=1f8" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2013,7 +2031,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABWYYK_htkQgdFPcvkxo95k42isuWRE9SvTS_zu-PGJN5hOWkUhYu9aWtPp3lSn_4kNE5XeOwD6ofiWAdPkpCyCqzF55eaItYawzF.jpg?r=086" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABeQs_u-mxhJAeSIpKtQX3G5-EE5JVKQfvsgb4grKCfpQ7VyqH6quqAWkEfmOv0mhX0Q3Tk1V0sogDOZAAdLywXL0BgmsIed8j9M.webp?r=009" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2041,7 +2059,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABVIjQdvB-ZY3H2SLAgbD94IxLGRapRm_5ujtLfmyeEEPWvGHcfHADAahQoR_O2vkmyGoy8e8o44zQxcPv4M8ExN2jG9nr72pUag.webp?r=e21" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABRCE9D1MJyBrcGnM9YZSzFkvzeL50UccjP-nDfACqIkJ4TB6xnyJy75B0GL2JY2shCa67I165xdviG5mB1c6BrOuesiloFdCNeY.webp?r=171" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2069,7 +2087,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABTdk9XG2jeVBbnyYOveJwt2pa9t-fPFQbe22DlBseLfXA49q7avK2ftf6JlEKm1znS9Z5rPCxipjhRS54QtVvMcXI-9wnVyG0k-d.jpg?r=118" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABVQQWQH0Xb-2swA0QC5AGs-E7PQo-N7BX4FypuBa5f5y25sGaRCqIICSsxpJthyyz2j00Keq-c9YJrwsvvFbunbE3HVHHFnKj24.webp?r=358" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2097,7 +2115,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABez-QKhId7ozL78N4MDlAqovZLrN6XFOUKTfnpjaZge-ILeIOPC2dkUEp0enrxcrk3taLZWM19H3m6aKm29eWbRY7nLVc2asJsY.webp?r=74c" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABdqfIifmVbO_-h3oFi1j1iEcbO_8u49GvpK0LCi9O2blM4-9ea6G4mQcF4DHObkKsAqnRl35-0zMS9xtA3_3O0vsmM_edKFJFzs.webp?r=6cb" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2153,7 +2171,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABb3fIhfPJmOuJrJwcViqPhRGq0Nl7n3zzMMzo9OMhiekamBQbjjjDldxXoRxPBjhm-_thZhkQgknC92w7gXyKOJelMc4-eHiaWg.webp?r=e90" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABYfzuQG_jnmA-aeZGKHmtobk6luINapFLzDZt5yo4--HqGJz2rHG-bgSQs6DJsN8dPXip76HafXtkDFLQ3-2eE0LnX-TF4_wXJ4.webp?r=adb" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2181,7 +2199,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABc4px4a9cB1HxxxTLg0YywKI2eafCbcCR42oU1A8xoGU_d2uJt3VSmf_iYpUFcTiuoYe0rAuq3CPu3lUqPgs7ZhYlga09GDg-Ho.webp?r=541" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQOQ_sUX7mP2JCOb3c3hS_r9eFIxUWcMo_WLPFwTvvXszK3hGUjgQ1-8kt6mUMHHBm_Ps0IP_7OYXEzm432KX5UVYYEur2Fzm5A.webp?r=ae7" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2213,14 +2231,14 @@
         </section>
          <section class="movies-section movie-section-2">
             <div class="head-container">
-                <div class="heading"><h3>Asian TV Shows</h3></div>
+                <div class="heading"><h3>Indian Movies</h3></div>
             </div>
             <div class="movie-container">
                 <div class="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
                 <div class="movie-box">
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABRVm6PbD0bsfNT_ed2xEpTruwjFI7hVDQ_1qm8oaBq-kg-Q60nZTPvAAjeT_LEoCPpo-srOu61ynxHjO1Pexfha-_-AQv6Z7yVc.webp?r=4d1" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQ0jChWpzuF12lH4rmmIwm0hVrmCuPLargLude47GIHliqkZ4w8BMvgLdjATGnCjfglOW66KVHdB3_MpBAHgAQVz4C9NydMbHmQ.webp?r=058" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2248,7 +2266,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABW6j-G4NUDzS6VnGUjW6p_PcGQcnj-HZUiNLPAAU81UC0iq-yIypWmoZkkEGBfVj6thHk5LStk45wybv6PER9ECBoApBVhuKyIU.webp?r=4a6" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABR6rYuyACAoHKRN_1_UtAQ4wIGDH37BAzrJ_zKJV81ct34PNWrbQG_oHjWBIZJnVw03uP481aGeXf5X6Z1XaT2ZMNrpEx7qlA5k.webp?r=29e" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2276,7 +2294,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABavNl6NxX1BnyCtuoPmVo9qCPs9EC7pFxFw0naFRhuKcDiOl_Sdz4eRTRKE6lvmqmYtUbg-AqNXYhZij03JwtsSe_LeKfSUtaZo.webp?r=122" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABXtTmyhsp2STXolyJJ8N3LHuyiRnOOqSfLkCWXcfjlIYICRVWSiHzLV219G0WU5vEMGUpvWCmbHsjqMlyFp8nuXECscHFu6lmB4.webp?r=c7c" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2304,7 +2322,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABTYwcLMzdP9fGSJTX_yw703P1f5jo9dh50z7_dAQE7N-Z_JeXPonEoyQxaK98Kyw3QQZmXA-rHIEKoQOOoIvcnY1KErG6EAYx6g.webp?r=441" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABdKHSs_hw_py1T87jbcoS3kGVyFri9c09tF-Ic2RoExZYBaYLpt0JSeyqps44B3TtjEQUKGiriaZYdq4Hn4xhpv9JLA5GaUb5pU.webp?r=616" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2332,7 +2350,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABbM80GDGeKEmnctVaFXR9t1Tx-fOC57M3XSrOiqIldxYJ2zbnialISlM_NCX1TlOqCJfwPubHCmNWsaliD4KwjD8dZDZsCDLgTk.webp?r=fb8" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABR5Ms9Nw2z5Ztkuiv-huftucoblsUPvkMaIPNhUUiNbzyCnxl3dPPl2b1jqwLd1dvwHL2vL6Gkd0uMyA7E_CMrVecTrV1B30xag.webp?r=910" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2360,7 +2378,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABU-tVEVQZ_hirZ140SRcMiSsP8d3AxBK_GeOW_RPRW8b-4FLSLAkOYioOdcKhqJMYYX-xlnbHpF5lw2gbJnbqOuBAmH8ozgC0Ok.webp?r=ab6" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABfcbQhmzxvVyuFUL9eItDlj6hBy1owA8volG5PCCK_JhDaT9A95WNUB2FFjAdEKpV4sKLuQK8dCYj8xIkHZljbjHbVRZOduBjCQ.webp?r=061" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2388,7 +2406,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABb3fIhfPJmOuJrJwcViqPhRGq0Nl7n3zzMMzo9OMhiekamBQbjjjDldxXoRxPBjhm-_thZhkQgknC92w7gXyKOJelMc4-eHiaWg.webp?r=e90" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABZ1JcIgHZwqYOi8N2LHK80ikatUjZedZtLtmZhwkPMCDMfTwmCEu0zgtLYNcp05whCvX3dP7H6jRqsYFozNBNCBwBvz4_V_UuBI.webp?r=439" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2416,7 +2434,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABeh-AmGEWBmu-POEl1RoiPllizjDRearbN4mUOK_Jm5CHvnqeV7uCO2jlDZbckPJRwSzw6h_QYFzZE7v5eXc08TvnRshZ5fwkOI.webp?r=011" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABT1bNQgGxhgxi-pG42iST9uRBJhyiuoLRIHD2yeMAQyOrXjl_ua9wkozItgPO65DI9yKm9LM6tggjDo66ZKP3w229xu08AfwHmU.webp?r=a56" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2444,7 +2462,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABTdk9XG2jeVBbnyYOveJwt2pa9t-fPFQbe22DlBseLfXA49q7avK2ftf6JlEKm1znS9Z5rPCxipjhRS54QtVvMcXI-9wnVyG0k-d.jpg?r=118" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQQxDcPjz55_Q9DQzTPvmUMFopA_T2JakEhdp3kFqEDTpOS6mqJRn-CdIuxszBKiYVp4SnP-82kReYiu1fnAikpMHcGzNAfwyxI.webp?r=0d8" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2588,14 +2606,14 @@
         </section>
          <section class="movies-section movie-section-2">
             <div class="head-container">
-                <div class="heading"><h3>Romantic International TV Shows</h3></div>
+                <div class="heading"><h3>Chineese Movies</h3></div>
             </div>
             <div class="movie-container">
                 <div class="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
                 <div class="movie-box">
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABUYVtpoDVvc_fSyrAEO8IT8Daxb0OktBj7FaDPCvPRxfXOzSsDPhaBqBRe4A1d_VtQItzg9xLEdYPx4wMPWwVtThIDu8QlNI6so.webp?r=8ca" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABU5VwoAR_ohZ81wPCY_SqOSwunfwABf6Gdz3NOSrytLszV6asvRStrO8sBK-J-S0rw2xTl-n3ekfAyxgquQ_YuclH7c6HanyptuAqsmV4Svtr1ee6l0BblpHWeut-V9Jl3IMpLkFHGkA-Jsxfrj-BW-0aDxd2pWxAaxdZwAimA.webp?r=68d" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2623,7 +2641,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABSJq1uR6dSAJJd249ccw2VJOq-BU0Xu4TzSNjBN28RydzwBGgddLZxOCovLTQ5b9snxLNGP4JbGyFAtMUUrieOlcWPIDAafGXlc.webp?r=e1e" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABZyvly8FfRJEk21RQmGVcikNRZikPFDs4SOGE-tdLl5GI8wKNM8-xm90wzV6rzZw6XR2pcDkrI0X56q8B5vjuMcaN0rce5Z_0eM.webp?r=bed" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2651,7 +2669,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABR6SUACJXfa8z-g1AIcBvXjnzLUvclc56WTeBYvLCoH6bVDsWpP9mkJfFCaI0ZLqzIA2udvM3VDulRk6wAJupEi7yaJJ8QtWv5S6qjS_5DoQqVfqGhLDhUjDVe6gU0ZPW-LAJkuFo6hmoc-LjeK2SKcKOmsr7Fj8GAllXSKZ6ZR7uPE788lHdREE9rspaUVTnlloqt53OE8N_X4YJe4d.webp?r=fb0" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABUsDy1ypdrT1jYdWL8fruh2IRUfMnKKGNNmbwPvzFkYzz6VWjO6MEoYBhMkR24RGARI9oERN9FupkXwYX9Vv4RO7i4i1SBWcuCw.webp?r=390" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2679,7 +2697,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABa_PW5pqiC8K6Qu_KtTtsbT1l6Slf5FOYBg3ue_0ygdRrIBIcyUcc0CYwPHD4JZBoXyQ1m7CXg3LJM6ysBa14VYAj8gFE3_sFYA.webp?r=e33" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABe0Q4tEiMzGpFKd_22l7tO1VZNIgQ-oWMP5YYwAAE1Do5DVuwooIp5GnkBxKbolmlBygLrM6zgHLSZVs8C_VnRk8MPRhOOwd0ik.webp?r=269" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2707,7 +2725,7 @@
                     </div>
                      <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABW4MgfCcBwFw3Xq8u0_igyWc1BRReBYTUr6j8JYj4a8QFnUzZtu-nH3jLWHZvDrquEgIRuBSRp5A5DDR3pdQ4vSgrr5ciRKn2tY.webp?r=cd7" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABVJmu2iNzlBKIHRwmbnfvt1wVSOUpZhL4s81yQro3q5dUwkmevpbuTqgfItpULfdelLE9SPze1oYiwfPNT_MITkSfZI61XUMsW0.webp?r=eb8" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2735,7 +2753,7 @@
                     </div>
                     <div class="movie-card">
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABbO9hbImTqGUIH5ZyKABbKFPZ7u6NHzz6Qh_YBe6j40gMIYg7SOThyZe4eyekYfwz0eoArGA5JVy46Mpk0NYHFE8CL1OQDR_cWg.webp?r=dcd" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABSP7AK9aEnhTBHvaDcJShcRbuZGY9bCuc9oTQlKRSmpI4t18G30xtQX7hpO0ikF9o7DmSxEzHwjjzxVN3tEz3apzVQZQ049CvMI.webp?r=beb" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -2971,7 +2989,7 @@
                     <div class="movie-card">
                         <span>1</span>
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSqyC6P49wPSV1x1fCH1_eKdlwr51BQyqvAdBYXVaD36picm3LvkQ1OTC3-YWjN1t3NhDjdJK2467GRdqQpl63Gtxh2CwHWKmKcUNUyZla5VUrSxLJlN5likKwiq4j2OOdnBebLB8VfbVDrGlME3NM3TyN-G-2JBtM4yT8cP9UnRpw.webp?r=e1f" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfWuzI3OLPfNxT2t-qa9mmRXX57qIEDeq9VBLjY75xLx7c95Vz4fp8w3IG48E07RpbKYk23LamvkcApih3IGxoRBIHykq8ORpSR3JuL3B75SOeD5EEVruGueE_xHVyDgYdQw_KxGhIS2lYxdEw73UVE3DxSBXt6eBAg1Af8vnwAQTw.webp?r=c26" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -3000,7 +3018,7 @@
                     <div class="movie-card">
                         <span>2</span>
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABcbRHeOeQVaLZKO3WBBJazBcPh5I-gqCe_DTrT7Z5B74SSu1wUWiULqRhK88sKbuLnHrp0C7RAxPWCm-Pg3451iFXXbxiik9silS1W1O2SwcAXvy-Vo5X6i8azQnfjp5i-BXQROddUd-9btAKig6Cer7XfLjNQcF8xC5c1yhWLZ_7w.webp?r=423" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVTWScNRstMgb2hvrp6Mu2cPpYT6UDHVSe7tqQUVDppqVZqtfZSZ2-lz_TATKvgAEOCFbguiTv_LFtPDkSUzNTExvpg8ojqCiidc2RFExQN56F_XLBHQM6ZolVqU26p0HLlEujdi6OUW18xZ85hfi1fyV4VXllrQdu7kPrMmRBR2Jw.webp?r=c9a" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
@@ -3029,7 +3047,7 @@
                      <div class="movie-card">
                         <span>3</span>
                         <div class="card-img">
-                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfuBDzbhBdKefHk-JkD194B_Q2EkmATEURsg9Kp0h24MF-9cbumLxQ5NazAOiakS04w3am7tnFvHzoPHuGB5Dd-OjkEONhI_d3GNUHBD1tzqAOAs2zMCl61fJeCcUnIh_9Hgf4RiZlHU2gfpSYDAg7T7JG8Jm3zTd4ZSwjmxx9jcVg.webp?r=da8" alt="" width="100%" height="100%">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABU4HRNO0he0Wm1cO_N_O3QXtdD63_KloqzCVqZ7p8JeBrBICb2NGVPhVkUV9E0bV_BUAi0lgPgUL9x4D10ju-AwvWohK6Ns-2yeIY2QPTSOciLLk_-0iU4ZRfTj4xFqla005hiXdpZEV25Bmt4BiM87qzyJe0SB9Odtf0_RnnDfKXw.webp?r=843" alt="" width="100%" height="100%">
                         </div>
                         <div class="card-body">
                             <div class="content">
